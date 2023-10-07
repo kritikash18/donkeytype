@@ -50,6 +50,7 @@
 
 mod args;
 mod config;
+mod color_scheme;
 mod expected_input;
 mod runner;
 
@@ -60,7 +61,7 @@ use crossterm::{
     terminal::{disable_raw_mode, enable_raw_mode, EnterAlternateScreen, LeaveAlternateScreen},
 };
 use std::io;
-use tui::{backend::CrosstermBackend, Terminal};
+use ratatui::{backend::CrosstermBackend, Terminal};
 
 use args::Args;
 use config::Config;
